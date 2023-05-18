@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+body {
+    background-color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mainContainer {
+    height: 100vh;
+    background-color: #424A58;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-sizing: content-box;
+
+}
+
+.searchSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 15vh;
+    align-items: center;
+}
+
+.searchButton {
+    height: 6vh;
+    width: 8rem;
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #1282A2;
+    border-style: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.inputCity {
+    height: 5vh;
+    width: 14rem;
+    border-radius: 8px;
+}
+
+.middleSection {
+    background-image: url(fondomontaña.jpg);
+    background-size: cover;
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+}
+
+.middleSection h2 {
+    font-size: 4rem;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.middleSection h3 {
+    font-size: 2rem;
+}
+
+.footerSection {
+    height: 40vh;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.ubication {
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 3px solid #faf6f6;
+    align-items: center;
+}
+
+.weatherData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.weatherData img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.wind {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
+    width: 15vh;
+    height: 28vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-right: 3px solid #f6f6f6;
+    border-left: 3px solid #f6f6f6;
+}
+
+.wind span {
+    font-family: 'Inconsolata', monospace;
+}
+
+
+@media (max-width: 500px) {
+
+    body{
+        height: auto;
+    }
+    .mainContainer {
+        height: 100vh;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .middleSection{
+        height: 45vh;
+    }
+    .searchSection {
+        height: 5vh;
+    }
+
+    .searchButton {
+        height: 4vh;
+    }
+
+    .inputCity {
+        height: 3vh;
+    }
+}
